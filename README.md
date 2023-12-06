@@ -1,2 +1,2 @@
-# kofi
-kofi
+# alight
+alight
