@@ -2,13 +2,13 @@
 	<service>
 		<engineName>WordPress</engineName>
 		<engineLink>https://wordpress.org/</engineLink>
-		<homePageLink>https://ncaafootballinfo.com/</homePageLink>
+		<homePageLink>https://callcontrols-eastus-poc.uhone.com/</homePageLink>
 		<apis>
-			<api name="WordPress" blogID="1" preferred="true" apiLink="https://ncaafootballinfo.com/xmlrpc.php" />
-			<api name="Movable Type" blogID="1" preferred="false" apiLink="https://ncaafootballinfo.com/xmlrpc.php" />
-			<api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://ncaafootballinfo.com/xmlrpc.php" />
-			<api name="Blogger" blogID="1" preferred="false" apiLink="https://ncaafootballinfo.com/xmlrpc.php" />
-				<api name="WP-API" blogID="1" preferred="false" apiLink="https://ncaafootballinfo.com/wp-json/" />
+			<api name="WordPress" blogID="1" preferred="true" apiLink="https://callcontrols-eastus-poc.uhone.com/xmlrpc.php" />
+			<api name="Movable Type" blogID="1" preferred="false" apiLink="https://callcontrols-eastus-poc.uhone.com/xmlrpc.php" />
+			<api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://callcontrols-eastus-poc.uhone.com/xmlrpc.php" />
+			<api name="Blogger" blogID="1" preferred="false" apiLink="https://callcontrols-eastus-poc.uhone.com/xmlrpc.php" />
+				<api name="WP-API" blogID="1" preferred="false" apiLink="https://callcontrols-eastus-poc.uhone.com/wp-json/" />
 			</apis>
 	</service>
 </rsd>
