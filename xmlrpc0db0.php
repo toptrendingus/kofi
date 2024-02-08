@@ -2,13 +2,13 @@
 	<service>
 		<engineName>WordPress</engineName>
 		<engineLink>https://wordpress.org/</engineLink>
-		<homePageLink>https://devcollector.uptime.rockwellautomation.com</homePageLink>
+		<homePageLink>https://you.csusb.edu</homePageLink>
 		<apis>
-			<api name="WordPress" blogID="1" preferred="true" apiLink="https://devcollector.uptime.rockwellautomation.com/xmlrpc.php" />
-			<api name="Movable Type" blogID="1" preferred="false" apiLink="https://devcollector.uptime.rockwellautomation.com/xmlrpc.php" />
-			<api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://devcollector.uptime.rockwellautomation.com/xmlrpc.php" />
-			<api name="Blogger" blogID="1" preferred="false" apiLink="https://devcollector.uptime.rockwellautomation.com/xmlrpc.php" />
-				<api name="WP-API" blogID="1" preferred="false" apiLink="https://devcollector.uptime.rockwellautomation.com/wp-json/" />
+			<api name="WordPress" blogID="1" preferred="true" apiLink="https://you.csusb.edu/xmlrpc.php" />
+			<api name="Movable Type" blogID="1" preferred="false" apiLink="https://you.csusb.edu/xmlrpc.php" />
+			<api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://you.csusb.edu/xmlrpc.php" />
+			<api name="Blogger" blogID="1" preferred="false" apiLink="https://you.csusb.edu/xmlrpc.php" />
+				<api name="WP-API" blogID="1" preferred="false" apiLink="https://you.csusb.edu/wp-json/" />
 			</apis>
 	</service>
 </rsd>
