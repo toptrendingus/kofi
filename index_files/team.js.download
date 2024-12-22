@@ -1,0 +1,42 @@
+const teamMembers = {
+    pi: {
+        name: "Payam Piray",
+        position: "Principal Investigator",
+        image: "team/payam.jpg",
+        action: "showSection('pi-page')",
+        bio: `I'm interested in understanding how the brain makes decisions, learns, draws conclusions, and makes generalizations. I am an Assistant Professor in the Department of Psychology and the Neuroscience Program at USC. Prior to that, I was a Postdoctoral Scholar at the <a href="https://pni.princeton.edu/" target="_blank" class="text-blue-600 hover:text-blue-800">Princeton Neuroscience Institute</a>, Princeton University, where I worked with Nathaniel Daw (2018-2022). I received my PhD at the <a href="https://www.ru.nl/donders-institute" target="_blank" class="text-blue-600 hover:text-blue-800">Donders Institute</a>, Radboud University, with Roshan Cools and Ivan Toni (2011-2016). I have received master's and bachelor's degrees in control engineering from the University of Tehran.
+
+            How to pronounce my first name: [Pa] in Patrick + [yum] in yummy.`
+    },
+
+    members: [
+        {
+            name: "Armin Bazarjani",
+            position: "Psychology PhD Student",
+            image: "team/armin.jpg",
+            webpage: "https://arminbaz.github.io/"
+        },
+        {
+            name: "Kary Fang",
+            position: "Neuroscience PhD Student",
+            image: "team/kary.png",
+        },
+        {
+            name: "Junxi Chen",
+            position: "Research Assistant",
+            image: "team/junxi.jpg",            
+        },
+        {
+            name: "You!",
+            position: "",
+            image: "imgs/team-cartoon2.png",            
+        },
+        {
+            name: "You!",
+            position: "",
+            image: "imgs/team-cartoon1.png",            
+        },        
+        // Add more members when needed
+    ]
+};
+

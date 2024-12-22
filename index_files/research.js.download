@@ -1,0 +1,45 @@
+const researchGoal = 'How do people make sense of incomplete and noisy observations? How do humans make decisions in an uncertain world and how do they learn from their mistakes? We investigate these problems in health and disease using computational and experimental tools.';
+
+const researchAreas = [
+    {
+      text: 'Solving complex planning problems efficiently and flexibly requires reusing expensive previous computations. The brain can do this, but how? We have developed a model, termed linear reinforcement learning, that addresses this question. The model reuses previous computations more nimbly in a way to enable biologically-realistic, flexible choice at the expense of specific, quantifiable control costs. The model produces similar flexibilities and inflexibilities as animals and unifies a number of hitherto distinct areas, including planning, entorhinal maps (grid cells and border cells) and cognitive control.',
+      figure: 'research/fig1.png',
+      publications: [
+        {
+            title: "Linear reinforcement learning in planning, grid fields, and cognitive control",
+            authors: "Piray P, Daw ND",
+            journal: "Nature Communications",
+            year: "2021",
+            pdf: "https://doi.org/10.1038/s41467-021-25123-3",
+            note: "Nature Communications 2021 Top 25 Articles"    
+        },
+        {
+            title: "Reconciling Flexibility and Efficiency: Medial Entorhinal Cortex Represents a Compositional Cognitive Map",
+            authors: "Piray P, Daw ND",
+            journal: "bioRxiv",
+            year: "2024",
+            pdf: "https://www.biorxiv.org/content/10.1101/2024.05.16.594459",    
+        }
+      ]
+    },
+    {
+      text: 'A key insight from Bayesian machine learning is that adaptive learning requires distinguishing between two types of noise: speed of change or volatility and moment-to-moment stochasticity. Although this is a computationally difficult problem, the brain can solve it; the question is, how? We addressed this issue by developing a model that learns to distinguish between volatility and stochasticity solely through observations over time. The model has two modules: a stochasticity module and a volatility module. These modules must compete within the model to explain experienced noise. This enables us to explain aspects of human and animal data across a wide range of seemingly unrelated neuroscientific and behavioral phenomena. It also provides a rich set of hypotheses about pathological learning in psychiatric conditions, where damage in one module impacts the behavior with regard to the other factor because the model misattributes all noise to the remaining module.',
+      figure: 'research/fig2.png',
+      publications: [
+        {
+            title: "Computational processes of simultaneous learning of stochasticity and volatility in humans",
+            authors: "Piray P, Daw ND",
+            journal: "Nature Communications",
+            year: "2024",
+            pdf: "https://www.nature.com/articles/s41467-024-53459-z",
+        },
+        {
+            title: "A model for learning based on the joint estimation of stochasticity and volatility",
+            authors: "Piray P, Daw ND",
+            journal: "Nature Communications",
+            year: "2021",
+            pdf: "https://doi.org/10.1038/s41467-021-26731-9",                            
+        },        
+      ]
+    },
+  ];

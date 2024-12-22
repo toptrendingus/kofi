@@ -1,0 +1,21 @@
+const infoTitle = "Piray Lab";
+
+const infoScholar = "https://scholar.google.com/citations?user=-ifvBVEAAAAJ&hl";
+const infoGithub = 'https://github.com/payampiray';
+const infoTwitter= 'https://twitter.com/payampiray';
+const infoBluesky= 'https://bsky.app/profile/payampiray.bsky.social';
+
+const infoCredit = `Department of Psychology and Neuroscience Program
+University of Southern California
+&copy; 2024 Piray Lab`;
+
+
+const infoResearchMission = 'From Neurons and Computations to Intelligence';
+
+const infoResearchFocus = 'How do people make sense of noisy and incomplete observations? How do humans make decisions in an uncertain world and how do they learn from their mistakes? The lab, headed by <a href="payam.html" class="text-blue-600 hover:text-blue-800">Payam Piray</a> at USC, studies these problems. <span class="inline-block"><button onclick="showSection(\'research\')" class="text-blue-600 hover:text-blue-800">Read more about our research!</button></span>';
+
+const textJoinUs = `The lab will be looking for PhD students, postdocs, and research assistants who want to do research at the intersection of computational and cognitive neuroscience. Because understanding the brain and mind is a multidisciplinary endeavor, we are looking for graduate students and postdocs from a variety of disciplines, including psychology, neuroscience, computer science, and engineering. We accept students from both the <a href="https://dornsife.usc.edu/psyc/admissions/" target="_blank" class="text-blue-600 hover:text-blue-800">Psychology PhD program in brain and cognitive science</a> and the <a href="https://ngp.usc.edu/prospective-students/admissions/" target="_blank" class="text-blue-600 hover:text-blue-800">Neuroscience graduate program</a> at USC. This is an <button onclick="window.location='prospective_faq.html'" class="text-blue-600 hover:text-blue-800">FAQ for prospective students</button>. Feel free to contact Payam Piray if you have questions (but please first see the FAQ, especially the last question!)`;
+
+const textLocation = "We are in the Psychology Department and Neuroscience Program at USC. The lab is located in Seeley G Mudd (SGM) Building Suite 824 at the USC University Park Campus.";
+
+const textEmail = "For inquiries about open positions in the lab, send an email to Payam Piray.";

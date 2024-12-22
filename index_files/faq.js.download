@@ -1,0 +1,38 @@
+const faqContent = [
+    {
+        question: "My field is not exactly computational neuroscience, but I have worked in closely related areas, such as artificial intelligence, deep learning, natural language processing, etc. Should I still apply?",
+        answer: "Yes. You have an excellent chance with those backgrounds, provided you demonstrate a strong interest in conducting research in neuroscience/psychology of decision making and learning. Be sure to emphasize this interest in your personal statement."
+    },
+    {
+        question: "I have experience in analyzing MRI/fMRI data. Should I still apply?",
+        answer: "Yes, but remember that technical neuroimaging experience alone is not sufficient. You should demonstrate interest and intention in conducting research in neuroscience/psychology of decision making and learning."
+    },
+    {
+        question: "My background is in medical sciences. Should I still apply?",
+        answer: "Your application will be considered, but you should preferably showcase your quantitative abilities through scientific publications."
+    },
+    {
+        question: "Which program should I apply to?",
+        answer: "You may apply to either the psychology (brain and cognitive science area) or neuroscience programs at USC. I'll accept students from both programs, although there are some differences between the two, especially in the first year. In short, admission to the neuroscience program is to the program as a whole, not specific labs. Students spend the first year doing coursework and rotations in three different labs. They will select their lab by the end of the first year. In psychology, however, students begin working in the lab that accepted them right away. In general, I have more control over psychology admissions."
+    },
+    {
+        question: "Can you tell me what are my chances to be accepted?",
+        answer: "It is difficult to make an assessment without reviewing all applications, but I understand that the application fee may be a burden for some applicants. Therefore, if you are considering applying, you can send me an email with all application materials no later than two weeks before the deadline, and I will let you know if your application is NOT competitive enough for joining my lab."
+    },    
+    {
+        question: "Is it possible for you to meet before the deadline?",
+        answer: "I'm afraid I can't meet with potential students before the application deadline. However, I'll be happy to review your application and schedule an interview if it is short-listed by the admissions committee after the deadline (usually in December or January)."
+    },    
+    {
+        question: "I come from a less privileged background. Do you consider that when evaluating my application?",
+        answer: "Absolutely. We are committed to the principles of diversity, equity, and inclusion for students of all races, ethnicities, and genders, among others. We are also committed to equity principles for prospective students with lower socioeconomic status. Please let me know if you believe that you are coming from an undeserved background."
+    },
+    {
+        question: "How should I prepare my application materials?",
+        answer: "It's important to be as specific as possible in your CV. Include all relevant information, especially include copy of your manuscripts (published, preprints, or even a to-be-submitted draft)."
+    },
+    {
+        question: "How can I show that I am really interested in your research?",
+        answer: "I strongly encourage prospective students to read the papers cited on the <a href='index.html#research' class='text-blue-600 hover:text-blue-800'>Research</a> page, which can help you with the interview process."
+    }
+];

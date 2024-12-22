@@ -1,0 +1,44 @@
+const tools = [
+    {
+        title: "cbm. computational and behavioral modeling toolbox",
+        link: "https://github.com/payampiray/cbm",
+        note: "cbm provides matlab tools for Bayesian model fitting",
+        manual: "https://payampiray.github.io/cbm",
+        publication:
+        {
+            title: "Hierarchical Bayesian inference for concurrent model fitting and comparison for group studies",
+            authors: "Piray P, Dezfouli A, Heskes T, Frank MJ, Daw ND",
+            journal: "PLoS Computational Biology",
+            year: "2019",
+            pdf: "https://doi.org/10.1371/journal.pcbi.1007043",
+        },    
+    },
+
+    {
+        title: "Human striatum map",
+        link: "https://github.com/payampiray/cbm",
+        note: " Connectivity-based parcellation of the human striatum based on resting fMRI, including these 5 clusters in the MNI space: ventral striatum, medial caudate, dorsal caudate, anterior putaman, posterior putaman.",        
+        publication:
+        {
+            title: "Mechanisms underlying dopamine-induced risky choice in Parkinson's disease with and without depression (history)",
+            authors: "Timmer MHM, Sescousse G, Esselink RAJ, Piray P, Cools R",
+            journal: "Computational Psychiatry",
+            year: "2017",
+            pdf: "https://doi.org/10.1162/cpsy_a_00011"
+        },
+    },
+
+    {
+        title: "Preprocessed fMRI data",
+        link: "https://data.donders.ru.nl/collections/di/dccn/DSC_3017021.04_731?0",
+        note: "fMRI data for the following paper:",
+        publication: 
+        {
+            title: "Emotionally aversive cues suppress neural systems underlying optimal learning in socially anxious individuals",
+            authors: "Piray P, Ly V, Roelofs K, Cools R*, Toni I*",
+            journal: "Journal of Neuroscience",
+            year: "2019",
+            pdf: "https://doi.org/10.1523/JNEUROSCI.1394-18.2018",
+        },                
+    },
+];

@@ -1,0 +1,148 @@
+// Head section content
+const commonHead = `
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="imgs/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/icon.png">
+    <link rel="apple-touch-icon-precomposed" href="imgs/icon.png">
+
+`;
+
+const nav = `
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex-shrink-0 relative cursor-pointer" onclick="window.location.pathname.includes('index.html') ? showSection('home') : window.location.replace('index.html')">
+                    <img src="imgs/mission.png" alt="Logo Symbol" class="h-24 object-contain">
+                    <div class="absolute top-2/3 ml-4 mt-2 transform -translate-y-1/2 flex flex-col -space-y-3">                                                
+                        <span class="font-['Noto_Sans_JP'] font-medium text-[16pt] text-black dark:text-white">Piray</span>                                                
+                        <span class="font-['Noto_Sans_JP'] font-medium text-[16pt] ml-3 text-black dark:text-white">Lab</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        ${window.location.pathname.includes('index.html') ? `
+                            <button onclick="showSection('home')" class="nav-link">Home</button>
+                            <button onclick="showSection('research')" class="nav-link">Research</button>
+                            <button onclick="showSection('team')" class="nav-link">Team</button>
+                            <button onclick="showSection('publications')" class="nav-link">Publications</button>
+                            <button onclick="showSection('tools')" class="nav-link">Tools</button>
+                            <button onclick="showSection('join')" class="nav-link">Positions</button>
+                            <button onclick="showSection('contact')" class="nav-link">Contact</button>
+                        ` : `
+                            <button onclick="window.location.replace('index.html'); history.replaceState({}, '', '/')" class="nav-link">Home</button>
+                            <button onclick="window.location.replace('index.html#research'); history.replaceState({}, '', '/#research')" class="nav-link">Research</button>
+                            <button onclick="window.location.replace('index.html#team'); history.replaceState({}, '', '/#team')" class="nav-link">Team</button>
+                            <button onclick="window.location.replace('index.html#publications'); history.replaceState({}, '', '/#publications')" class="nav-link">Publications</button>
+                            <button onclick="window.location.replace('index.html#tools'); history.replaceState({}, '', '/#tools')" class="nav-link">Tools</button>
+                            <button onclick="window.location.replace('index.html#join'); history.replaceState({}, '', '/#join')" class="nav-link">Positions</button>
+                            <button onclick="window.location.replace('index.html#contact'); history.replaceState({}, '', '/#contact')" class="nav-link">Contact</button>
+                        `}
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <button onclick="handleMobileNav('home')" class="nav-link block w-full text-left">Home</button>
+                <button onclick="handleMobileNav('research')" class="nav-link block w-full text-left">Research</button>
+                <button onclick="handleMobileNav('team')" class="nav-link block w-full text-left">Team</button>
+                <button onclick="handleMobileNav('publications')" class="nav-link block w-full text-left">Publications</button>
+                <button onclick="handleMobileNav('tools')" class="nav-link block w-full text-left">Tools</button>
+                <button onclick="handleMobileNav('join')" class="nav-link block w-full text-left">Positions</button>
+                <button onclick="handleMobileNav('contact')" class="nav-link block w-full text-left">Contact</button>
+            </div>
+        </div>
+    </nav>
+`;
+
+// Footer content
+const footer = `
+    <footer style="background-color: #F5C94F;" class="text-black py-6">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div id="creditText"></div>
+                <div class="flex space-x-4">
+                    <a id="scholarLink" target="_blank" class="text-black hover:text-gray-300">
+                        <i class="fa-brands fa-google-scholar fa-lg"></i>
+                        <span class="sr-only">Google Scholar Profile</span>
+                    </a>                    
+                    <a id="githubLink" target="_blank" class="text-black hover:text-gray-300">
+                        <i class="fab fa-github fa-lg"></i>
+                        <span class="sr-only">Github Profile</span>
+                    </a>
+                    <a id="twitterLink" target="_blank" class="text-black hover:text-gray-300">
+                        <i class="fab fa-twitter fa-lg"></i>
+                        <span class="sr-only">Twitter Profile</span>
+                    </a>
+                    <a id="blueskyLink" target="_blank" class="text-black hover:text-gray-300">
+                        <i class="fa-brands fa-bluesky fa-lg"></i>
+                        <span class="sr-only">Bluesky Profile</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+`;
+
+// Initialize common functionality
+function initCommon() {
+    // Social media links and credit text
+    if (document.getElementById('creditText')) {
+        document.getElementById('scholarLink').href = infoScholar;
+        document.getElementById('githubLink').href = infoGithub;
+        document.getElementById('twitterLink').href = infoTwitter;
+        document.getElementById('blueskyLink').href = infoBluesky;
+        document.getElementById('creditText').innerHTML = infoCredit.replace(/\n/g, '<br>');
+    }
+
+    // Mobile menu - check if element exists first
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    if (mobileMenuButton) {
+        mobileMenuButton.addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    }
+}
+
+function handleMobileNav(section) {
+    // Close mobile menu
+    document.getElementById('mobile-menu').classList.add('hidden');
+    
+    // If we're on index.html
+    if (window.location.pathname.includes('index.html')) {
+        showSection(section);
+        // Clear hash from URL
+        history.pushState("", document.title, window.location.pathname);
+    } else {
+        // If we're on another page (like pi.html)
+        window.location.href = 'index.html#' + section;
+    }
+}
+
+function cleanupGitHubPagesUrl() {
+    // Remove the GitHub Pages check since we want this to run on piraylab.com too
+    window.addEventListener('load', cleanUrl);
+    window.addEventListener('popstate', cleanUrl);
+    window.addEventListener('hashchange', cleanUrl);
+}
+
+function cleanUrl() {
+    if (window.location.pathname.includes('index.html')) {
+        let newPath = window.location.pathname.replace('index.html', '');
+        let newUrl = window.location.origin + newPath + window.location.hash;
+        history.replaceState(null, '', newUrl);
+    }
+}

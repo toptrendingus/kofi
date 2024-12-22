@@ -1,0 +1,159 @@
+const publications = [
+    {
+        title: "Reconciling Flexibility and Efficiency: Medial Entorhinal Cortex Represents a Compositional Cognitive Map",
+        authors: "Piray P, Daw ND",
+        journal: "bioRxiv",
+        year: "2024",
+        pdf: "https://www.biorxiv.org/content/10.1101/2024.05.16.594459",
+    },
+    {
+        title: "Computational processes of simultaneous learning of stochasticity and volatility in humans",
+        authors: "Piray P, Daw ND",
+        journal: "Nature Communications",
+        year: "2024",        
+        pdf: "https://www.nature.com/articles/s41467-024-53459-z",
+        code: "https://github.com/payampiray/stovol-learning",
+        data: "https://zenodo.org/records/13840905",
+    },
+    {
+        title: "Distinct roles of human hippocampus and dorsomedial prefrontal cortex in latent social cause inference",
+        authors: "Mahmoodi A*, Luo S*, Harbison C, Piray P†, Rushworth M†",
+        authorNote: "* Equal first co-author, † Equal senior co-author",
+        journal: "Neuron",
+        year: "2024",
+        pdf: "https://www.cell.com/neuron/fulltext/S0896-6273(24)00649-4",
+    },
+    {
+        title: "Reinforced Multiple Instance Selection for Speaker Attribute Prediction",
+        authors: "Salkhordeh Ziabari A, Omrani A, Hejabi P, Golazizian P, Kennedy B, Piray P, Dehghani M",
+        journal: "North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+        year: "2024",        
+        pdf: "https://aclanthology.org/2024.naacl-long.181/",        
+    },
+    {
+        title: "Goal-directed and habitual decision making under stress in Gambling Disorder: an fMRI study",
+        authors: "van Timmeren T, Piray P, Goudriaan A, van Holst R",
+        journal: "Addictive Behaviors",
+        year: "2023",
+        pdf: "https://www.sciencedirect.com/science/article/pii/S0306460323000230",
+    },
+    {
+        title: "A model for learning based on the joint estimation of stochasticity and volatility",
+        authors: "Piray P, Daw ND",
+        journal: "Nature Communications",
+        year: "2021",
+        pdf: "https://doi.org/10.1038/s41467-021-26731-9",
+        code: "https://github.com/payampiray/health-lesion-stovol",
+        data: "https://github.com/payampiray/stochasticity_volatility_learning"
+    },
+    {
+        title: "Linear reinforcement learning in planning, grid fields, and cognitive control",
+        authors: "Piray P, Daw ND",
+        journal: "Nature Communications",
+        year: "2021",
+        pdf: "https://doi.org/10.1038/s41467-021-25123-3",
+        data: "https://github.com/payampiray/LinearRL",
+        note: "Nature Communications 2021 Top 25 Articles"
+    },
+    {
+        title: "A simple model for learning in volatile environments",
+        authors: "Piray P, Daw ND",
+        journal: "PLoS Computational Biology",
+        year: "2020",
+        pdf: "https://doi.org/10.1371/journal.pcbi.1007963",
+        code: "https://github.com/payampiray/VKF",
+        data: "https://github.com/payampiray/piray_daw_2020_ploscb"
+    },
+    {
+        title: "Hierarchical Bayesian inference for concurrent model fitting and comparison for group studies",
+        authors: "Piray P, Dezfouli A, Heskes T, Frank MJ, Daw ND",
+        journal: "PLoS Computational Biology",
+        year: "2019",
+        pdf: "https://doi.org/10.1371/journal.pcbi.1007043",
+        code: "https://payampiray.github.io/cbm",
+        data: "https://github.com/payampiray/piray_etal_2019_ploscb"
+    },
+    {
+        title: "Emotionally aversive cues suppress neural systems underlying optimal learning in socially anxious individuals",
+        authors: "Piray P, Ly V, Roelofs K, Cools R*, Toni I*",
+        authorNote: "* Equal senior co-author",
+        journal: "Journal of Neuroscience",
+        year: "2019",
+        pdf: "https://doi.org/10.1523/JNEUROSCI.1394-18.2018",
+        code: "https://github.com/payampiray/piray_etal_2019_JNeurosci",
+        data: "https://data.donders.ru.nl/collections/di/dccn/DSC_3017021.04_731?0"
+    },
+    {
+        title: "Mechanisms underlying dopamine-induced risky choice in Parkinson's disease with and without depression (history)",
+        authors: "Timmer MHM, Sescousse G, Esselink RAJ, Piray P, Cools R",
+        journal: "Computational Psychiatry",
+        year: "2018",
+        pdf: "https://doi.org/10.1162/cpsy_a_00011"
+    },
+    {
+        title: "Dopaminergic modulation of the functional ventrodorsal architecture of the human striatum",
+        authors: "Piray P, den Ouden H, van der Schaaf M, Toni I, Cools R",
+        journal: "Cerebral Cortex",
+        year: "2017",
+        pdf: "https://doi.org/10.1093/cercor/bhv243",
+        data: "https://github.com/payampiray/human_striatum_parcellation"
+    },
+    {
+        title: "Human choice strategy varies with anatomical projections from ventromedial prefrontal cortex to medial striatum",
+        authors: "Piray P, Toni I, Cools R",
+        journal: "Journal of Neuroscience",
+        year: "2016",
+        pdf: "https://doi.org/10.1523/JNEUROSCI.2033-15.2016"
+    },
+    {
+        title: "Impulse control disorders in Parkinson's disease are associated with dysfunction in stimulus valuation but not action valuation",
+        authors: "Piray P, Zeighami Y, Bahrami F, Eissa AM, Hewedi DH, Moustafa AA",
+        journal: "Journal of Neuroscience",
+        year: "2014",
+        pdf: "https://doi.org/10.1523/JNEUROSCI.4063-13.2014"
+    },
+    {
+        title: "Neuroeconomics and the study of addiction",
+        authors: "Monterosso J, Piray P, Luo S",
+        journal: "Biological Psychiatry",
+        year: "2012",
+        pdf: "https://doi.org/10.1016/j.biopsych.2012.03.012"
+    },
+    {
+        title: "Understanding addiction as a pathological state of multiple decision making processes: a neurocomputational perspective",
+        authors: "Keramati MM, Dezfouli A, Piray P",
+        journal: "Computational Neuroscience of Drug Addiction, Eds. Gutkin B., Ahmed S., Springer",
+        year: "2012",
+        pdf: "https://link.springer.com/chapter/10.1007/978-1-4614-0751-5_8"
+    },    
+    {
+        title: "Speed/accuracy trade-off between the habitual and the goal-directed processes",
+        authors: "Keramati MM*, Dezfouli A*, Piray P",
+        authorNote: "* Equal first co-author",
+        journal: "PLoS Computational Biology",
+        year: "2011",
+        pdf: "https://doi.org/10.1371/journal.pcbi.1002055"
+    },
+    {
+        title: "The role of dorsal striatal D2-like receptors in reversal learning: a reinforcement learning viewpoint",
+        authors: "Piray P",
+        journal: "Journal of Neuroscience",
+        year: "2011",
+        pdf: "https://doi.org/10.1523/JNEUROSCI.3008-11.2011",
+    },
+    {
+        title: "Individual differences in nucleus accumbens dopamine receptors predict development of addiction-like behavior: a computational approach",
+        authors: "Piray P, Keramati MM*, Dezfouli A*, Lucas C, Mokri A",
+        authorNote: "* Equal contribution",
+        journal: "Neural Computation",
+        year: "2010",
+        pdf: "https://doi.org/10.1162/NECO_a_00009"
+    },
+    {
+        title: "A neurocomputational model for cocaine addiction",
+        authors: "Dezfouli A, Piray P, Keramati MM, Ekhtiari H, Lucas C, Mokri A",
+        journal: "Neural Computation",
+        year: "2009",
+        pdf: "https://doi.org/10.1162/neco.2009.10-08-882"
+    },
+];
