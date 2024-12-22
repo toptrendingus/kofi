@@ -1,31 +1,29 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Preload images -->
-    <link rel="preload" href="imgs/mission.png" as="image">
-    <link rel="preload" href="imgs/research.png" as="image">
-    <link rel="preload" href="imgs/team.png" as="image">
-    <link rel="preload" href="imgs/publications.png" as="image">
-    <link rel="preload" href="imgs/tools.png" as="image">
-    <link rel="preload" href="imgs/join.png" as="image">
-    <link rel="preload" href="imgs/contact.png" as="image">
-    <link rel="preload" href="imgs/location.png" as="image">
-    <link rel="preload" href="imgs/email.png" as="image">    
+    <link rel="preload" href="./index_files/mission.png" as="image">
+    <link rel="preload" href="./index_files/research.png" as="image">
+    <link rel="preload" href="./index_files/team.png" as="image">
+    <link rel="preload" href="./index_files/publications.png" as="image">
+    <link rel="preload" href="./index_files/tools.png" as="image">
+    <link rel="preload" href="./index_files/join.png" as="image">
+    <link rel="preload" href="https://piraylab.com/imgs/contact.png" as="image">
+    <link rel="preload" href="./index_files/location.png" as="image">
+    <link rel="preload" href="./index_files/email.png" as="image">    
 
-    <script src="info.js"></script>
-    <script src="team.js"></script>
-    <script src="research.js"></script>
-    <script src="publications.js"></script>
-    <script src="tools.js"></script>
-    <script src="faq.js"></script>
-    <script src="common.js"></script>
-    <link href="styles.css" rel="stylesheet">
+    <script src="./index_files/info.js.download"></script>
+    <script src="./index_files/team.js.download"></script>
+    <script src="./index_files/research.js.download"></script>
+    <script src="./index_files/publications.js.download"></script>
+    <script src="./index_files/tools.js.download"></script>
+    <script src="./index_files/faq.js.download"></script>
+    <script src="./index_files/common.js.download"></script>
+    <link href="./index_files/styles.css" rel="stylesheet">
 
     <!-- Set page title from info.js -->
    <script>
         document.title = infoTitle;
-    </script>    
+    </script><title>Piray Lab</title>    
 
     <!-- Initialize common.js -->
     <script>
@@ -37,65 +35,194 @@
             cleanupGitHubPagesUrl();
         });
     </script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="./index_files/tailwind.min.css" rel="stylesheet">    
+    <link href="./index_files/all.min.css" rel="stylesheet">    
+    <link href="./index_files/css2" rel="stylesheet">
+    <link href="./index_files/styles.css" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="https://piraylab.com/imgs/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://piraylab.com/imgs/icon.png">
+    <link rel="apple-touch-icon-precomposed" href="https://piraylab.com/imgs/icon.png">
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="./index_files/tailwind.min.css" rel="stylesheet">    
+    <link href="./index_files/all.min.css" rel="stylesheet">    
+    <link href="./index_files/css2" rel="stylesheet">
+    <link href="./index_files/styles.css" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="https://piraylab.com/imgs/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://piraylab.com/imgs/icon.png">
+    <link rel="apple-touch-icon-precomposed" href="https://piraylab.com/imgs/icon.png">
+
 </head>
-<body class="bg-white min-h-screen flex flex-col">
-    <div id="nav-placeholder"></div>
+<body class="bg-white min-h-screen flex flex-col" cz-shortcut-listen="true">
+    <div id="nav-placeholder">
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex-shrink-0 relative cursor-pointer" onclick="window.location.pathname.includes(&#39;index.html&#39;) ? showSection(&#39;home&#39;) : window.location.replace(&#39;index.html&#39;)">
+                    <img src="./index_files/mission.png" alt="Logo Symbol" class="h-24 object-contain">
+                    <div class="absolute top-2/3 ml-4 mt-2 transform -translate-y-1/2 flex flex-col -space-y-3">                                                
+                        <span class="font-[&#39;Noto_Sans_JP&#39;] font-medium text-[16pt] text-black dark:text-white">Piray</span>                                                
+                        <span class="font-[&#39;Noto_Sans_JP&#39;] font-medium text-[16pt] ml-3 text-black dark:text-white">Lab</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        
+                            <button onclick="showSection(&#39;home&#39;)" class="nav-link">Home</button>
+                            <button onclick="showSection(&#39;research&#39;)" class="nav-link active">Research</button>
+                            <button onclick="showSection(&#39;team&#39;)" class="nav-link">Team</button>
+                            <button onclick="showSection(&#39;publications&#39;)" class="nav-link">Publications</button>
+                            <button onclick="showSection(&#39;tools&#39;)" class="nav-link">Tools</button>
+                            <button onclick="showSection(&#39;join&#39;)" class="nav-link">Positions</button>
+                            <button onclick="showSection(&#39;contact&#39;)" class="nav-link">Contact</button>
+                        
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <button onclick="handleMobileNav(&#39;home&#39;)" class="nav-link block w-full text-left">Home</button>
+                <button onclick="handleMobileNav(&#39;research&#39;)" class="nav-link block w-full text-left">Research</button>
+                <button onclick="handleMobileNav(&#39;team&#39;)" class="nav-link block w-full text-left">Team</button>
+                <button onclick="handleMobileNav(&#39;publications&#39;)" class="nav-link block w-full text-left">Publications</button>
+                <button onclick="handleMobileNav(&#39;tools&#39;)" class="nav-link block w-full text-left">Tools</button>
+                <button onclick="handleMobileNav(&#39;join&#39;)" class="nav-link block w-full text-left">Positions</button>
+                <button onclick="handleMobileNav(&#39;contact&#39;)" class="nav-link block w-full text-left">Contact</button>
+            </div>
+        </div>
+    </nav>
+</div>
     
     <!-- Main Content Area -->
     <main class="flex-grow pt-24">
 
         <!-- Home Section -->
-        <section id="home" class="min-h-screen bg-white section">
+        <section id="home" class="min-h-screen bg-white section hidden">
             <div class="max-w-7xl mx-auto px-4 space-y-12">
 
                 <!-- Wrapper div for both elements -->
                 <div class="grid md:grid-rows-[auto_auto] md:gap-0">
                     <!-- Main Mission - hidden on mobile -->
                     <div class="text-center hidden md:block mt-8">
-                        <img src="imgs/mission.png" alt="Research Header" class="mx-auto w-1/3 inline-block">
+                        <img src="./index_files/mission.png" alt="Research Header" class="mx-auto w-1/3 inline-block">
                     </div>
 
                     <!-- Mission text - centered and smaller on mobile -->
                     <div class="text-center mt-8 md:-mt-12">  <!-- Changed from md:-mt-4 to md:-mt-8 -->
                         <!-- <h2 id="missionText" class="text-base md:text-2xl font-bold text-gray-900"></h2>                         -->
-                        <h2 id="missionText" class="text-base md:text-2xl font-bold text-black dark:text-white"></h2>
+                        <h2 id="missionText" class="text-base md:text-2xl font-bold text-black dark:text-white">From Neurons and Computations to Intelligence</h2>
                     </div>
                 </div>
 
                 <!-- Research section - less spacing on mobile -->
                 <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-                    <img src="imgs/research.png" alt="Research" class="md:w-1/3">
-                    <div class="md:w-1/2" id="researchFocusText"></div>
+                    <img src="./index_files/research.png" alt="Research" class="md:w-1/3">
+                    <div class="md:w-1/2" id="researchFocusText">How do people make sense of noisy and incomplete observations? How do humans make decisions in an uncertain world and how do they learn from their mistakes? The lab, headed by <a href="https://piraylab.com/payam.html" class="text-blue-600 hover:text-blue-800">Payam Piray</a> at USC, studies these problems. <span class="inline-block"><button onclick="showSection(&#39;research&#39;)" class="text-blue-600 hover:text-blue-800 active">Read more about our research!</button></span></div>
                 </div>
 
 
                 <!-- Join Us - larger image on mobile -->
                 <div class="text-center">
                     <h3 class="text-xl font-bold text-gray-900 mb-2">
-                        <button onclick="showSection('join')" class="text-blue-600 hover:text-blue-800">
+                        <button onclick="showSection(&#39;join&#39;)" class="text-blue-600 hover:text-blue-800 active">
                             We have open positions. Join us!
                         </button>
                     </h3>
-                    <img src="imgs/join.png" alt="Join Us Header" class="mx-auto w-6/4 md:w-3/4">
+                    <img src="./index_files/join.png" alt="Join Us Header" class="mx-auto w-6/4 md:w-3/4">
                 </div>
             </div>
         </section>
 
         <!-- Research Section -->
-        <section id="research" class="min-h-screen bg-white py-12 section hidden">
+        <section id="research" class="min-h-screen bg-white py-12 section">
             <div class="max-w-7xl mx-auto px-4">
                 <div class="page-header-image text-center">
-                    <img src="imgs/research.png" alt="Research Header" class="mx-auto w-2/3 md:w-1/3">
+                    <img src="./index_files/research.png" alt="Research Header" class="mx-auto w-2/3 md:w-1/3">
                 </div>
                 
                 <!-- Add this container for research goal -->
-                <div id="researchGoalText" class="max-w-4xl mx-auto text-lg text-gray-700 mb-12">
-                    <!-- Research goal text will be loaded here -->
-                </div>
+                <div id="researchGoalText" class="max-w-4xl mx-auto text-lg text-gray-700 mb-12">How do people make sense of incomplete and noisy observations? How do humans make decisions in an uncertain world and how do they learn from their mistakes? We investigate these problems in health and disease using computational and experimental tools.</div>
         
-                <div id="researchContainer" class="space-y-16">
-                    <!-- Research areas loaded here -->
-                </div>
+                <div id="researchContainer" class="space-y-16"><div>
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <img src="./index_files/fig1.png" alt="Research Area 1" class="md:w-1/3">
+                        <div class="md:w-1/2">
+                            <p class="text-lg text-gray-700 mb-6">Solving complex planning problems efficiently and flexibly requires reusing expensive previous computations. The brain can do this, but how? We have developed a model, termed linear reinforcement learning, that addresses this question. The model reuses previous computations more nimbly in a way to enable biologically-realistic, flexible choice at the expense of specific, quantifiable control costs. The model produces similar flexibilities and inflexibilities as animals and unifies a number of hitherto distinct areas, including planning, entorhinal maps (grid cells and border cells) and cognitive control.</p>
+                            
+                            <div class="space-y-4">
+                                <h3 class="text-lg font-semibold">Related Publications:</h3>
+                                
+                                    <div class="mb-2">
+                                        <a href="https://doi.org/10.1038/s41467-021-25123-3" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                            Linear reinforcement learning in planning, grid fields, and cognitive control
+                                        </a>
+                                        <div class="text-sm text-gray-600">
+                                            Piray P, Daw ND<br>
+                                            <i>Nature Communications</i>, 2021
+                                        </div>
+                                    </div>
+                                
+                                    <div class="mb-2">
+                                        <a href="https://www.biorxiv.org/content/10.1101/2024.05.16.594459" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                            Reconciling Flexibility and Efficiency: Medial Entorhinal Cortex Represents a Compositional Cognitive Map
+                                        </a>
+                                        <div class="text-sm text-gray-600">
+                                            Piray P, Daw ND<br>
+                                            <i>bioRxiv</i>, 2024
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div><div>
+                    <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                        <img src="./index_files/fig2.png" alt="Research Area 2" class="md:w-1/3">
+                        <div class="md:w-1/2">
+                            <p class="text-lg text-gray-700 mb-6">A key insight from Bayesian machine learning is that adaptive learning requires distinguishing between two types of noise: speed of change or volatility and moment-to-moment stochasticity. Although this is a computationally difficult problem, the brain can solve it; the question is, how? We addressed this issue by developing a model that learns to distinguish between volatility and stochasticity solely through observations over time. The model has two modules: a stochasticity module and a volatility module. These modules must compete within the model to explain experienced noise. This enables us to explain aspects of human and animal data across a wide range of seemingly unrelated neuroscientific and behavioral phenomena. It also provides a rich set of hypotheses about pathological learning in psychiatric conditions, where damage in one module impacts the behavior with regard to the other factor because the model misattributes all noise to the remaining module.</p>
+                            
+                            <div class="space-y-4">
+                                <h3 class="text-lg font-semibold">Related Publications:</h3>
+                                
+                                    <div class="mb-2">
+                                        <a href="https://www.nature.com/articles/s41467-024-53459-z" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                            Computational processes of simultaneous learning of stochasticity and volatility in humans
+                                        </a>
+                                        <div class="text-sm text-gray-600">
+                                            Piray P, Daw ND<br>
+                                            <i>Nature Communications</i>, 2024
+                                        </div>
+                                    </div>
+                                
+                                    <div class="mb-2">
+                                        <a href="https://doi.org/10.1038/s41467-021-26731-9" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                            A model for learning based on the joint estimation of stochasticity and volatility
+                                        </a>
+                                        <div class="text-sm text-gray-600">
+                                            Piray P, Daw ND<br>
+                                            <i>Nature Communications</i>, 2021
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div></div>
             </div>
         </section>
 
@@ -103,14 +230,33 @@
         <section id="team" class="min-h-screen bg-white py-12 section hidden">
             <div class="max-w-7xl mx-auto px-4">
                 <div class="page-header-image text-center">
-                    <img src="imgs/team.png" alt="Team Header" class="mx-auto w-4/3 md:w-2/3">
+                    <img src="./index_files/team.png" alt="Team Header" class="mx-auto w-4/3 md:w-2/3">
                 </div>
                 <div id="piSection" class="text-center mb-16 mt-16">
-                    <!-- PI info loaded dynamically -->
-                </div>
-                <div id="teamGrid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Team members loaded dynamically -->
-                </div>
+                <img src="./index_files/payam.jpg" alt="Payam Piray" onclick="window.location.href=&#39;payam.html&#39;" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover hover:opacity-90 cursor-pointer">
+                <h3 class="text-xl font-semibold mb-2">
+                    <a href="https://piraylab.com/payam.html" class="text-blue-600 hover:text-blue-800">
+                        Payam Piray
+                    </a>
+                </h3>
+                <p class="text-gray-600">Principal Investigator</p>
+            </div>
+                <div id="teamGrid" class="grid grid-cols-1 md:grid-cols-3 gap-8"><div class="text-center">
+                    <img src="./index_files/armin.jpg" alt="Armin Bazarjani" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2"><a href="https://arminbaz.github.io/" target="_blank" class="text-blue-600 hover:text-blue-800">Armin Bazarjani</a></h3>
+                    <p class="text-gray-600">Psychology PhD Student</p></div><div class="text-center">
+                    <img src="./index_files/kary.png" alt="Kary Fang" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Kary Fang</h3>
+                    <p class="text-gray-600">Neuroscience PhD Student</p></div><div class="text-center">
+                    <img src="./index_files/junxi.jpg" alt="Junxi Chen" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Junxi Chen</h3>
+                    <p class="text-gray-600">Research Assistant</p></div><div class="text-center">
+                    <img src="./index_files/team-cartoon2.png" alt="You!" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">You!</h3>
+                    <p class="text-gray-600"></p></div><div class="text-center">
+                    <img src="./index_files/team-cartoon1.png" alt="You!" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">You!</h3>
+                    <p class="text-gray-600"></p></div></div>
             </div>
         </section>
 
@@ -118,11 +264,89 @@
         <section id="publications" class="min-h-screen bg-white py-12 section hidden">
             <div class="max-w-7xl mx-auto px-4">
                 <div class="page-header-image text-center">
-                    <img src="imgs/publications.png" alt="Publications Header" class="mx-auto w-2/3 md:w-1/3">
+                    <img src="./index_files/publications.png" alt="Publications Header" class="mx-auto w-2/3 md:w-1/3">
                 </div>
-                <div id="publicationsList" class="max-w-4xl mx-auto space-y-8">
-                    <!-- Publications loaded dynamically -->
-                </div>
+                <div id="publicationsList" class="max-w-4xl mx-auto space-y-8"><div class="mb-8"><div class="text-lg"><a href="https://www.biorxiv.org/content/10.1101/2024.05.16.594459" target="_blank" class="text-blue-600 hover:text-blue-800">Reconciling Flexibility and Efficiency: Medial Entorhinal Cortex Represents a Compositional Cognitive Map</a></div><div class="mt-2">Piray P, Daw ND</div><div class="mt-1">
+                    <i>bioRxiv</i>, 2024
+                    
+                    
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://www.nature.com/articles/s41467-024-53459-z" target="_blank" class="text-blue-600 hover:text-blue-800">Computational processes of simultaneous learning of stochasticity and volatility in humans</a></div><div class="mt-2">Piray P, Daw ND</div><div class="mt-1">
+                    <i>Nature Communications</i>, 2024
+                    <a href="https://github.com/payampiray/stovol-learning" target="_blank" class="text-blue-600 hover:text-blue-800 ml-4">[code]</a>
+                    <a href="https://zenodo.org/records/13840905" target="_blank" class="text-blue-600 hover:text-blue-800 ml-2">[data]</a>
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://www.cell.com/neuron/fulltext/S0896-6273(24)00649-4" target="_blank" class="text-blue-600 hover:text-blue-800">Distinct roles of human hippocampus and dorsomedial prefrontal cortex in latent social cause inference</a></div><div class="mt-2">Mahmoodi A*, Luo S*, Harbison C, Piray P†, Rushworth M†</div><div class="mt-1 text-gray-600 italic">* Equal first co-author, † Equal senior co-author</div><div class="mt-1">
+                    <i>Neuron</i>, 2024
+                    
+                    
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://aclanthology.org/2024.naacl-long.181/" target="_blank" class="text-blue-600 hover:text-blue-800">Reinforced Multiple Instance Selection for Speaker Attribute Prediction</a></div><div class="mt-2">Salkhordeh Ziabari A, Omrani A, Hejabi P, Golazizian P, Kennedy B, Piray P, Dehghani M</div><div class="mt-1">
+                    <i>North American Chapter of the Association for Computational Linguistics: Human Language Technologies</i>, 2024
+                    
+                    
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://www.sciencedirect.com/science/article/pii/S0306460323000230" target="_blank" class="text-blue-600 hover:text-blue-800">Goal-directed and habitual decision making under stress in Gambling Disorder: an fMRI study</a></div><div class="mt-2">van Timmeren T, Piray P, Goudriaan A, van Holst R</div><div class="mt-1">
+                    <i>Addictive Behaviors</i>, 2023
+                    
+                    
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://doi.org/10.1038/s41467-021-26731-9" target="_blank" class="text-blue-600 hover:text-blue-800">A model for learning based on the joint estimation of stochasticity and volatility</a></div><div class="mt-2">Piray P, Daw ND</div><div class="mt-1">
+                    <i>Nature Communications</i>, 2021
+                    <a href="https://github.com/payampiray/health-lesion-stovol" target="_blank" class="text-blue-600 hover:text-blue-800 ml-4">[code]</a>
+                    <a href="https://github.com/payampiray/stochasticity_volatility_learning" target="_blank" class="text-blue-600 hover:text-blue-800 ml-2">[data]</a>
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://doi.org/10.1038/s41467-021-25123-3" target="_blank" class="text-blue-600 hover:text-blue-800">Linear reinforcement learning in planning, grid fields, and cognitive control</a></div><div class="mt-2">Piray P, Daw ND</div><div class="mt-1">
+                    <i>Nature Communications</i>, 2021
+                    
+                    <a href="https://github.com/payampiray/LinearRL" target="_blank" class="text-blue-600 hover:text-blue-800 ml-2">[data]</a>
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://doi.org/10.1371/journal.pcbi.1007963" target="_blank" class="text-blue-600 hover:text-blue-800">A simple model for learning in volatile environments</a></div><div class="mt-2">Piray P, Daw ND</div><div class="mt-1">
+                    <i>PLoS Computational Biology</i>, 2020
+                    <a href="https://github.com/payampiray/VKF" target="_blank" class="text-blue-600 hover:text-blue-800 ml-4">[code]</a>
+                    <a href="https://github.com/payampiray/piray_daw_2020_ploscb" target="_blank" class="text-blue-600 hover:text-blue-800 ml-2">[data]</a>
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://doi.org/10.1371/journal.pcbi.1007043" target="_blank" class="text-blue-600 hover:text-blue-800">Hierarchical Bayesian inference for concurrent model fitting and comparison for group studies</a></div><div class="mt-2">Piray P, Dezfouli A, Heskes T, Frank MJ, Daw ND</div><div class="mt-1">
+                    <i>PLoS Computational Biology</i>, 2019
+                    <a href="https://payampiray.github.io/cbm" target="_blank" class="text-blue-600 hover:text-blue-800 ml-4">[code]</a>
+                    <a href="https://github.com/payampiray/piray_etal_2019_ploscb" target="_blank" class="text-blue-600 hover:text-blue-800 ml-2">[data]</a>
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://doi.org/10.1523/JNEUROSCI.1394-18.2018" target="_blank" class="text-blue-600 hover:text-blue-800">Emotionally aversive cues suppress neural systems underlying optimal learning in socially anxious individuals</a></div><div class="mt-2">Piray P, Ly V, Roelofs K, Cools R*, Toni I*</div><div class="mt-1 text-gray-600 italic">* Equal senior co-author</div><div class="mt-1">
+                    <i>Journal of Neuroscience</i>, 2019
+                    <a href="https://github.com/payampiray/piray_etal_2019_JNeurosci" target="_blank" class="text-blue-600 hover:text-blue-800 ml-4">[code]</a>
+                    <a href="https://data.donders.ru.nl/collections/di/dccn/DSC_3017021.04_731?0" target="_blank" class="text-blue-600 hover:text-blue-800 ml-2">[data]</a>
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://doi.org/10.1162/cpsy_a_00011" target="_blank" class="text-blue-600 hover:text-blue-800">Mechanisms underlying dopamine-induced risky choice in Parkinson's disease with and without depression (history)</a></div><div class="mt-2">Timmer MHM, Sescousse G, Esselink RAJ, Piray P, Cools R</div><div class="mt-1">
+                    <i>Computational Psychiatry</i>, 2018
+                    
+                    
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://doi.org/10.1093/cercor/bhv243" target="_blank" class="text-blue-600 hover:text-blue-800">Dopaminergic modulation of the functional ventrodorsal architecture of the human striatum</a></div><div class="mt-2">Piray P, den Ouden H, van der Schaaf M, Toni I, Cools R</div><div class="mt-1">
+                    <i>Cerebral Cortex</i>, 2017
+                    
+                    <a href="https://github.com/payampiray/human_striatum_parcellation" target="_blank" class="text-blue-600 hover:text-blue-800 ml-2">[data]</a>
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://doi.org/10.1523/JNEUROSCI.2033-15.2016" target="_blank" class="text-blue-600 hover:text-blue-800">Human choice strategy varies with anatomical projections from ventromedial prefrontal cortex to medial striatum</a></div><div class="mt-2">Piray P, Toni I, Cools R</div><div class="mt-1">
+                    <i>Journal of Neuroscience</i>, 2016
+                    
+                    
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://doi.org/10.1523/JNEUROSCI.4063-13.2014" target="_blank" class="text-blue-600 hover:text-blue-800">Impulse control disorders in Parkinson's disease are associated with dysfunction in stimulus valuation but not action valuation</a></div><div class="mt-2">Piray P, Zeighami Y, Bahrami F, Eissa AM, Hewedi DH, Moustafa AA</div><div class="mt-1">
+                    <i>Journal of Neuroscience</i>, 2014
+                    
+                    
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://doi.org/10.1016/j.biopsych.2012.03.012" target="_blank" class="text-blue-600 hover:text-blue-800">Neuroeconomics and the study of addiction</a></div><div class="mt-2">Monterosso J, Piray P, Luo S</div><div class="mt-1">
+                    <i>Biological Psychiatry</i>, 2012
+                    
+                    
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://link.springer.com/chapter/10.1007/978-1-4614-0751-5_8" target="_blank" class="text-blue-600 hover:text-blue-800">Understanding addiction as a pathological state of multiple decision making processes: a neurocomputational perspective</a></div><div class="mt-2">Keramati MM, Dezfouli A, Piray P</div><div class="mt-1">
+                    <i>Computational Neuroscience of Drug Addiction, Eds. Gutkin B., Ahmed S., Springer</i>, 2012
+                    
+                    
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://doi.org/10.1371/journal.pcbi.1002055" target="_blank" class="text-blue-600 hover:text-blue-800">Speed/accuracy trade-off between the habitual and the goal-directed processes</a></div><div class="mt-2">Keramati MM*, Dezfouli A*, Piray P</div><div class="mt-1 text-gray-600 italic">* Equal first co-author</div><div class="mt-1">
+                    <i>PLoS Computational Biology</i>, 2011
+                    
+                    
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://doi.org/10.1523/JNEUROSCI.3008-11.2011" target="_blank" class="text-blue-600 hover:text-blue-800">The role of dorsal striatal D2-like receptors in reversal learning: a reinforcement learning viewpoint</a></div><div class="mt-2">Piray P</div><div class="mt-1">
+                    <i>Journal of Neuroscience</i>, 2011
+                    
+                    
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://doi.org/10.1162/NECO_a_00009" target="_blank" class="text-blue-600 hover:text-blue-800">Individual differences in nucleus accumbens dopamine receptors predict development of addiction-like behavior: a computational approach</a></div><div class="mt-2">Piray P, Keramati MM*, Dezfouli A*, Lucas C, Mokri A</div><div class="mt-1 text-gray-600 italic">* Equal contribution</div><div class="mt-1">
+                    <i>Neural Computation</i>, 2010
+                    
+                    
+                </div></div><div class="mb-8"><div class="text-lg"><a href="https://doi.org/10.1162/neco.2009.10-08-882" target="_blank" class="text-blue-600 hover:text-blue-800">A neurocomputational model for cocaine addiction</a></div><div class="mt-2">Dezfouli A, Piray P, Keramati MM, Ekhtiari H, Lucas C, Mokri A</div><div class="mt-1">
+                    <i>Neural Computation</i>, 2009
+                    
+                    
+                </div></div></div>
             </div>
         </section>
 
@@ -130,11 +354,54 @@
         <section id="tools" class="min-h-screen bg-white py-12 section hidden">
             <div class="max-w-7xl mx-auto px-4">
                 <div class="page-header-image text-center">
-                    <img src="imgs/tools.png" alt="Tools Header" class="mx-auto w-2/3 md:w-1/3">
+                    <img src="./index_files/tools.png" alt="Tools Header" class="mx-auto w-2/3 md:w-1/3">
                 </div>
-                <div id="toolsList" class="max-w-4xl mx-auto space-y-8">
-                    <!-- Tools loaded dynamically -->
+                <div id="toolsList" class="max-w-4xl mx-auto space-y-8"><div class="mb-8"><div class="text-lg">
+                    <a href="https://github.com/payampiray/cbm" target="_blank" class="text-blue-600 hover:text-blue-800">cbm. computational and behavioral modeling toolbox</a>
+                </div><div class="mt-2 text-gray-700">
+                    cbm provides matlab tools for Bayesian model fitting
+                    <a href="https://payampiray.github.io/cbm" target="_blank" class="text-blue-600 hover:text-blue-800 ml-2">[manual]</a>
                 </div>
+                        <div class="mt-4 pl-4 border-l-2 border-gray-200">
+                            <div><a href="https://doi.org/10.1371/journal.pcbi.1007043" target="_blank" class="text-blue-600 hover:text-blue-800">Hierarchical Bayesian inference for concurrent model fitting and comparison for group studies</a></div>
+                            <div class="mt-1 text-gray-600">Piray P, Dezfouli A, Heskes T, Frank MJ, Daw ND</div>
+                            <div class="mt-1">
+                                <i>PLoS Computational Biology</i>, 2019
+                                
+                                
+                            </div>
+                        </div>
+                    </div><div class="mb-8"><div class="text-lg">
+                    <a href="https://github.com/payampiray/cbm" target="_blank" class="text-blue-600 hover:text-blue-800">Human striatum map</a>
+                </div><div class="mt-2 text-gray-700">
+                     Connectivity-based parcellation of the human striatum based on resting fMRI, including these 5 clusters in the MNI space: ventral striatum, medial caudate, dorsal caudate, anterior putaman, posterior putaman.
+                    
+                </div>
+                        <div class="mt-4 pl-4 border-l-2 border-gray-200">
+                            <div><a href="https://doi.org/10.1162/cpsy_a_00011" target="_blank" class="text-blue-600 hover:text-blue-800">Mechanisms underlying dopamine-induced risky choice in Parkinson's disease with and without depression (history)</a></div>
+                            <div class="mt-1 text-gray-600">Timmer MHM, Sescousse G, Esselink RAJ, Piray P, Cools R</div>
+                            <div class="mt-1">
+                                <i>Computational Psychiatry</i>, 2017
+                                
+                                
+                            </div>
+                        </div>
+                    </div><div class="mb-8"><div class="text-lg">
+                    <a href="https://data.donders.ru.nl/collections/di/dccn/DSC_3017021.04_731?0" target="_blank" class="text-blue-600 hover:text-blue-800">Preprocessed fMRI data</a>
+                </div><div class="mt-2 text-gray-700">
+                    fMRI data for the following paper:
+                    
+                </div>
+                        <div class="mt-4 pl-4 border-l-2 border-gray-200">
+                            <div><a href="https://doi.org/10.1523/JNEUROSCI.1394-18.2018" target="_blank" class="text-blue-600 hover:text-blue-800">Emotionally aversive cues suppress neural systems underlying optimal learning in socially anxious individuals</a></div>
+                            <div class="mt-1 text-gray-600">Piray P, Ly V, Roelofs K, Cools R*, Toni I*</div>
+                            <div class="mt-1">
+                                <i>Journal of Neuroscience</i>, 2019
+                                
+                                
+                            </div>
+                        </div>
+                    </div></div>
             </div>
         </section>
 
@@ -142,13 +409,11 @@
         <section id="join" class="min-h-screen bg-white py-12 section hidden">
             <div class="max-w-7xl mx-auto px-4">
                 <div class="page-header-image text-center">
-                    <img src="imgs/join.png" alt="Join Us Header" class="mx-auto w-6/3 md:w-3/4">
+                    <img src="./index_files/join.png" alt="Join Us Header" class="mx-auto w-6/3 md:w-3/4">
                 </div>
                 <div class="max-w-4xl mx-auto">
                     <h2 class="text-3xl font-bold text-center mb-8">Join Our Lab</h2>
-                    <div id="joinText" class="prose max-w-none">
-                        <!-- Join content loaded dynamically -->
-                    </div>
+                    <div id="joinText" class="prose max-w-none">The lab will be looking for PhD students, postdocs, and research assistants who want to do research at the intersection of computational and cognitive neuroscience. Because understanding the brain and mind is a multidisciplinary endeavor, we are looking for graduate students and postdocs from a variety of disciplines, including psychology, neuroscience, computer science, and engineering. We accept students from both the <a href="https://dornsife.usc.edu/psyc/admissions/" target="_blank" class="text-blue-600 hover:text-blue-800">Psychology PhD program in brain and cognitive science</a> and the <a href="https://ngp.usc.edu/prospective-students/admissions/" target="_blank" class="text-blue-600 hover:text-blue-800">Neuroscience graduate program</a> at USC. This is an <button onclick="window.location=&#39;prospective_faq.html&#39;" class="text-blue-600 hover:text-blue-800">FAQ for prospective students</button>. Feel free to contact Payam Piray if you have questions (but please first see the FAQ, especially the last question!)</div>
                 </div>
             </div>
         </section>
@@ -159,18 +424,14 @@
                 <div class="max-w-6xl mx-auto space-y-6">
                     <!-- Location Info -->
                     <div class="flex flex-col md:flex-row items-center gap-4">
-                        <img src="imgs/location.png" alt="Contact" class="w-full md:w-1/3 rounded-lg">
-                        <div class="w-full md:w-2/5" id="locationText">
-                            <!-- Location text loaded dynamically -->
-                        </div>
+                        <img src="./index_files/location.png" alt="Contact" class="w-full md:w-1/3 rounded-lg">
+                        <div class="w-full md:w-2/5" id="locationText">We are in the Psychology Department and Neuroscience Program at USC. The lab is located in Seeley G Mudd (SGM) Building Suite 824 at the USC University Park Campus.</div>
                     </div>
 
                     <!-- Contact Info -->
                     <div class="flex flex-col md:flex-row-reverse items-center gap-4">
-                        <img src="imgs/email.png" alt="Contact" class="w-full md:w-1/3 rounded-lg">
-                        <div class="w-full md:w-2/5 md:pl-12" id="emailText">
-                            <!-- Email text loaded dynamically -->
-                        </div>
+                        <img src="./index_files/email.png" alt="Contact" class="w-full md:w-1/3 rounded-lg">
+                        <div class="w-full md:w-2/5 md:pl-12" id="emailText">For inquiries about open positions in the lab, send an email to Payam Piray.</div>
                     </div>
                 </div>
             </div>
@@ -178,7 +439,33 @@
 
     </main>
 
-    <div id="footer-placeholder"></div>
+    <div id="footer-placeholder">
+    <footer style="background-color: #F5C94F;" class="text-black py-6">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div id="creditText">Department of Psychology and Neuroscience Program<br>University of Southern California<br>© 2024 Piray Lab</div>
+                <div class="flex space-x-4">
+                    <a id="scholarLink" target="_blank" class="text-black hover:text-gray-300" href="https://scholar.google.com/citations?user=-ifvBVEAAAAJ&amp;hl">
+                        <i class="fa-brands fa-google-scholar fa-lg"></i>
+                        <span class="sr-only">Google Scholar Profile</span>
+                    </a>                    
+                    <a id="githubLink" target="_blank" class="text-black hover:text-gray-300" href="https://github.com/payampiray">
+                        <i class="fab fa-github fa-lg"></i>
+                        <span class="sr-only">Github Profile</span>
+                    </a>
+                    <a id="twitterLink" target="_blank" class="text-black hover:text-gray-300" href="https://twitter.com/payampiray">
+                        <i class="fab fa-twitter fa-lg"></i>
+                        <span class="sr-only">Twitter Profile</span>
+                    </a>
+                    <a id="blueskyLink" target="_blank" class="text-black hover:text-gray-300" href="https://bsky.app/profile/payampiray.bsky.social">
+                        <i class="fa-brands fa-bluesky fa-lg"></i>
+                        <span class="sr-only">Bluesky Profile</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
 
     <script>
         // Previous JavaScript remains the same
@@ -479,5 +766,5 @@
             }
         });
     </script>
-</body>
-</html>
+
+</body></html>
